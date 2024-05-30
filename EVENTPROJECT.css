@@ -1,16 +1,22 @@
+   /*The following code is to design the images in the mainpage*/
+
 .image_container {
-    display: flex;
+    display:flex;
+    margin-top: 100px;
+    margin-left: 25px;
 }
 
 .image_container a {
+
     margin-right: auto;
     position: relative; /* Create positioning context */
     display: block; /* Ensure the anchor tag is treated as a block element */
-    overflow: hidden; /* Ensure the scaling effect stays within bounds */
+    overflow: hidden; 
 }
 
 .image_container a img {
-    width: 300px;
+
+    width: 750px;
     height: auto;
     transition: transform 0.3s ease;
     display: block; /* Remove any default spacing */
@@ -48,5 +54,45 @@
     padding: 10px 20px;
     border-radius: 5px; /* Optional: make the text box look nicer */
 }
+    /* Navigation Code */
 
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    nav {
+        background-color: black;
+        overflow: hidden;
+        height: 80px;
+
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-links li {
+        display: inline;
+    }
+    
+    .nav-links li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    
+    .nav-links li a:hover {
+        color: aquamarine;
+    }
+    
 
