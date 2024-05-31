@@ -15,13 +15,18 @@ body {
 }
 
 .contact-header {
-    display: flex;
     align-items: center;
-    background-color: #007bff;
+    background-color: rgb(39, 66, 236);
     padding: 20px;
     border-radius: 8px 8px 0 0;
     color: white;
+    
 }
+.contact-container img {
+    width: 100px;
+}
+
+
 
 .logo {
     width: 50px;
