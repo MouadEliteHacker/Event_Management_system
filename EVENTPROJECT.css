@@ -121,47 +121,52 @@
     height : 100%;
     margin-top: 5px;
 }
-body {
-    background-color: #708090; /* Slate Gray */
+
+
+/*icons */
+
+.icon-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; /* Margin on the left and right of each icon */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Features Section */
-.features-section {
+.icon-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+.icon {
+    width: 150px; /* Adjust the size of the icons */
+    height: 160px; /* Adjust the size of the icons */
+    margin-bottom: 10px; /* Space between the icon and the text */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icon-container:hover .icon {
+    transform: scale(1.2); /* Zoom in the image on hover */
+}
+
+.icon-text {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f5f5f5; /* Light background for the features section */
+    font-size: 14px; /* Adjust the size of the text */
 }
 
-.features-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.features-wrapper {
+.icon-row {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    width: 80%; /* Adjust this width as needed */
+    margin: 0 auto;
 }
 
-.feature {
-    flex-basis: 30%;
+.icon-text {
     text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: white; /* White background for each feature */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
+    font-size: 14px; /* Adjust the size of the text */
 
-.feature img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.feature p {
-    font-size: 1.2rem;
-    color: #333;
 }
