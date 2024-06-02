@@ -1,3 +1,31 @@
+.white-block{
+    width: 98%;
+    height: 300px;
+    padding: 10px; /* Padding inside the div */
+    background-color: #fff; /* Background color for better shadow visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    border-radius: 3px; /* Optional: rounded corners */
+}
+.logo img {
+    width: 100px;
+}
+.text h1{
+    font-style: italic;
+    font-size:  80px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 .All_images {
     margin-top: 100px;
@@ -7,12 +35,18 @@
     gap: 30px; /* Adjust as needed */
 }
 
-.image_container {
-    position: relative; /* Create positioning context */
+.image-wrapper {
+    display: flex; /* Use flex to place text next to the image */
+    align-items: center; /* Center the text vertically */
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 10px;
 }
 
-.image_container a {
+.image_container {
+    position: relative; /* Create positioning context */
     display: block; /* Ensure the anchor tag is treated as a block element */
+    overflow: hidden;
 }
 
 .image_container img {
@@ -23,16 +57,11 @@
     border-radius: 5px;
 }
 
-.image-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.image-wrapper:hover img {
+.image_container:hover img {
     transform: scale(1.1); /* Scale the image */
 }
 
-.image-wrapper::after {
+.image_container::after {
     content: '';
     position: absolute;
     top: 0;
@@ -45,19 +74,15 @@
     z-index: 1;
 }
 
-.image-wrapper:hover::after {
+.image_container:hover::after {
     opacity: 1; /* Show overlay on hover */
 }
 
 .image-text {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
+    margin-left: 20px; /* Adds space between image and text */
     font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px; /* Optional: make the text box look nicer */
-    z-index: 2; /* Ensure text is above the overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for text */
+    color: white; /* Optional: text color */
+    padding: 10px; /* Optional: padding around text */
 }
+
