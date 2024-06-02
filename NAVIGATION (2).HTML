@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Event Management</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-profile">
+            <img src="person-icon-male-user-profile-avatar-vector-18833568 (1).jpg" alt="User Profile">
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="menu-item" onclick="toggleSubMenu('dashboard')">Dashboard</li>
+                    <ul id="dashboard" class="submenu">
+                        <li>Overview of upcoming events</li>
+                        <li>Quick stats and key metrics</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('events')">Events</li>
+                    <ul id="events" class="submenu">
+                        <li>View all events</li>
+                        <li>Create new event</li>
+                        <li>Edit existing events</li>
+                        <li>Event calendar view</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('attendees')">Attendees</li>
+                    <ul id="attendees" class="submenu">
+                        <li>Attendee list</li>
+                        <li>Registration management</li>
+                        <li>Check-in/check-out functionality</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('tickets')">Tickets</li>
+                    <ul id="tickets" class="submenu">
+                        <li>Ticket types and pricing</li>
+                        <li>Manage ticket sales</li>
+                        <li>Ticketing reports</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('venues')">Venues</li>
+                    <ul id="venues" class="submenu">
+                        <li>Venue management</li>
+                        <li>Seating arrangement</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('schedules')">Schedules</li>
+                    <ul id="schedules" class="submenu">
+                        <li>Event schedule</li>
+                        <li>Session management</li>
+                        <li>Speaker management</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('marketing')">Marketing</li>
+                    <ul id="marketing" class="submenu">
+                        <li>Email campaigns</li>
+                        <li>Social media integration</li>
+                        <li>Promotional tools</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('reports')">Reports and Analytics</li>
+                    <ul id="reports" class="submenu">
+                        <li>Sales reports</li>
+                        <li>Attendee demographics</li>
+                        <li>Feedback and surveys</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('settings')">Settings</li>
+                    <ul id="settings" class="submenu">
+                        <li>User profiles</li>
+                        <li>System settings</li>
+                        <li>Payment gateways</li>
+                        <li>Notification settings</li>
+                    </ul>
+                    <li class="menu-item" onclick="toggleSubMenu('support')">Support</li>
+                    <ul id="support" class="submenu">
+                        <li>Help center</li>
+                        <li>Contact support</li>
+                        <li>FAQs</li>
+                    </ul>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="content">
+                <h1>Welcome to Event Management System</h1>
+                <div class="banner">
+                    <img src="WhatsApp Image 2024-05-30 at 21.22.15_e081221e.jpg" alt="Banner">
+                </div>
+                <div class="info">
+                    <img src="download.png" alt="Info">
+                    <p>This is a description of the event management system. Here you can manage all aspects of your events, from attendees to venues, tickets, and more.</p>
+                </div>
+                <div class="info">
+                    <img src="download (1).png" alt="Info">
+                    <p>Another piece of information about the system's features and benefits.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
