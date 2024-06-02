@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Event Management System</title>
     <link rel="stylesheet" href="Login.css">
+    <script>
+        function validateAndRedirect(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username && password) {
+                window.location.href = "EVENTPROJECT.HTML"; // Redirect to event_project.html
+            } else {
+                alert("Please enter both username and password.");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="login-container">
         <h2>CHAMEL.</h2>
-        <form action="#">
+        <form onsubmit="validateAndRedirect(event)">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
