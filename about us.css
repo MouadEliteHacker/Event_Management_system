@@ -42,3 +42,7 @@ h1 {
 .about-content p {
     margin: 10px 0;
 }
+body {
+    background-color: #708090; /* Slate Gray */
+}
+
