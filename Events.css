@@ -36,11 +36,14 @@ body {
 }
 
 .image-wrapper {
+    width: 98%; /* Ensure the container only grows as much as needed */
     display: flex; /* Use flex to place text next to the image */
     align-items: center; /* Center the text vertically */
     overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    padding: 10px; /* Add padding to make the box shadow larger */
+    background-color: white; /* Optional: add a background color */
+    border-radius: 5px; /* Optional: add border radius */
 }
 
 .image_container {
