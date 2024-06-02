@@ -1,4 +1,8 @@
-   /*The following code is to design the images in the mainpage*/
+body {
+    background-color: #708090; /* Slate Gray */
+}
+  
+  /*The following code is to design the images in the mainpage*/
 
 .All_images {
     display:flex;
