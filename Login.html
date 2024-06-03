@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Event Management System</title>
+    <title>Login - Chamel</title>
     <link rel="stylesheet" href="Login.css">
     <script>
         function validateAndRedirect(event) {
             event.preventDefault(); // Prevent the form from submitting in the traditional way
-            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
-            if (username && password) {
-                window.location.href = "EVENTPROJECT.HTML"; // Redirect to event_project.html
+            if (email && password) {
+                window.location.href = "EVENTPROJECT.html"; // Redirect to event_project.html
             } else {
-                alert("Please enter both username and password.");
+                alert("Please enter both email and password.");
             }
         }
     </script>
 </head>
 <body>
     <div class="login-container">
-        <h2>CHAMEL.</h2>
-        <form onsubmit="validateAndRedirect(event)">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+        <div class="welcome-section">
+            <img src="burnaboy.jpg" alt="Welcome Image">
+        </div>
+        <div class="login-section">
+            <h2>CHAMEL.</h2>
+            <form onsubmit="validateAndRedirect(event)">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
