@@ -130,6 +130,22 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+.footer-section ul li a img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 30px;
+    
+    text-align: center;
+}
+.footer-section ul li a img label {
+    
+    bottom: 60px;
+}
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
 .footer-section ul li a:hover {
     color: #3498db;
@@ -165,7 +181,25 @@ body {
     border: none;
     border-radius: 3px;
 }
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
 
+.social-item img {
+    max-width: 30px;
+    margin-right: 10px;
+    float: right;
+   
+}
+
+.social-item label {
+    vertical-align: middle;
+    color: #ecf0f1;
+    float: right;
+}
 .newsletter button {
     padding: 10px 20px;
     background-color: #3498db;
