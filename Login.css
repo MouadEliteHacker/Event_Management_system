@@ -1,56 +1,77 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+}
+
+.welcome-section {
+    flex: 1;
+    background-color: #007bff; /* Placeholder color in case image does not load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #333;
     text-align: center;
 }
 
-h2 {
+.input-group {
     margin-bottom: 20px;
 }
 
-.input-group {
-    margin-bottom: 15px;
-    text-align: left;
-    width: 330px;
-}
-
 .input-group label {
+    margin-bottom: 10px;
+    color: #555;
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
 }
 
 .input-group input {
-    width: 100%;
     padding: 10px;
+    width: 100%;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 button {
-    width: 300px;
     padding: 10px;
-    background-color: #5cb85c;
+    width: 100%;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #0056b3;
 }
