@@ -24,20 +24,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-.welcome-section::after {
-    
-}
+
+
+
 .welcome-section img {
     max-width: 550px;
     height: auto;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Light black overlay */
-    pointer-events: none; /* Ensures the overlay does not interfere with user interactions */
 }
 
 .login-section {
