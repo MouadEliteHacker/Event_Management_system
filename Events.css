@@ -33,25 +33,28 @@ body {
 }
 
 .image-wrapper {
+    height: 250px;
     width: 98%; /* Ensure the container only grows as much as needed */
     display: flex; /* Use flex to place text next to the image */
-    align-items: center; /* Center the text vertically */
+    align-items: flex-start; /* Align items at the start (top) */
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust shadow to be darker */
     padding: 10px; /* Add padding to make the box shadow larger */
     background-color: white; /* Optional: add a background color */
     border-radius: 5px; /* Optional: add border radius */
 }
 
 .image_container {
-    position: relative; /* Create positioning context */
     display: block; /* Ensure the anchor tag is treated as a block element */
     overflow: hidden;
+    width: 60%; /* Adjust width as needed */
+    margin: 0; /* Remove margin to align with the top */
 }
 
 .image_container img {
-    width: 600px;
-    height: auto;
+    width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image fits within the container height */
     transition: transform 0.3s ease;
     display: block; /* Remove any default spacing */
     border-radius: 5px;
@@ -79,13 +82,15 @@ body {
 }
 
 .image-text {
-    margin-top: -100px;
     margin-left: 20px; /* Adds space between image and text */
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: background for text */
     color: white; /* Optional: text color */
     padding: 10px; /* Optional: padding around text */
+    flex: 1; /* Make the text container take the remaining space */
+    align-self: flex-start; /* Align the text container to the top */
 }
+
 /* Footer */
 
 .footer {
