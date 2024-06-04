@@ -35,6 +35,29 @@ body {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: white;
 }
+.white-block1{
+    font-family: 'Oswald', sans-serif; /* Oswald font for a modern, clean look */
+    color: #333; /* Dark, readable text color */
+    text-align: center; /* Center align the text */
+    font-size: 30px; /* Large font size for headings */
+    font-weight: 700; /* Bold font weight for prominence */
+    margin: 0; /* Reset margin */
+    padding: 40px 0; /* Padding above and below the text */
+    background-color: #f8f8f8; /* Light background color to make the heading stand out */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Slightly rounded corners for a modern look */
+    display: block; /* Block display to fill the width */
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+}
+.white-block1 h1:after{
+    content: '';
+    display: block;
+    margin: 20px auto; /* Center the line */
+    width: 15%; /* Line width */
+    padding-top: 3px; /* Line thickness */
+    border-bottom: 2px solid #333; /* Line color */
+}
 
 .booking-button {
     padding: 10px 20px;
@@ -44,8 +67,32 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 600px;
+    text-decoration: none;
+    margin-bottom: 100px;
 }
 
 .booking-button:hover {
     background-color: #2980b9;
+}
+.TXT {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Slight shadow */
+    width: 98%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 3px; /* rounded corners */
+
+}
+.TXT p{
+    font-family: 'oswald';
+    font-size:x-large;
+    font: italic, bold;
+    text-align: center;
+}
+.image-container a{
+    width: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
 }
