@@ -1,22 +1,3 @@
-.white-block{
-    width: 100%;
-    height: 300px;
-    /*padding: 10px; /* Padding inside the div */
-    background-color: #fff; /* Background color for better shadow visibility */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
-    border-radius: 3px; /* Optional: rounded corners */
-}
-.logo img {
-    width: 100px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-.text h1{
-    font-style: italic;
-    font-size:  80px;
-    text-align: center;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,72 +5,80 @@ body {
     background-color: lightgray;
 }
 
+.white-block {
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.text h1 {
+    font-style: italic;
+    font-size: 80px;
+    text-align: center;
+}
+
 .All_images {
     margin-top: 100px;
     margin-left: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Adjust as needed */
+    gap: 30px;
 }
 
 .image-wrapper {
-    height: 250px;
-    width: 98%; /* Ensure the container only grows as much as needed */
-    display: flex; /* Use flex to place text next to the image */
-    align-items: flex-start; /* Align items at the start (top) */
+    height: 320px;
+    width: 98%;
+    display: flex;
+    align-items: flex-start;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust shadow to be darker */
-    padding: 10px; /* Add padding to make the box shadow larger */
-    background-color: white; /* Optional: add a background color */
-    border-radius: 5px; /* Optional: add border radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .image_container {
-    display: block; /* Ensure the anchor tag is treated as a block element */
+    display: block;
     overflow: hidden;
-    width: 60%; /* Adjust width as needed */
-    margin: 0; /* Remove margin to align with the top */
+    width: 60%;
+    margin: 0;
 }
 
 .image_container img {
-    width: 100%; /* Ensure the image fills the container width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Ensure the image fits within the container height */
+    width: 600px;
+    height: 350px;
     transition: transform 0.3s ease;
-    display: block; /* Remove any default spacing */
+    display: block;
     border-radius: 5px;
 }
 
 .image_container:hover img {
-    transform: scale(1.1); /* Scale the image */
-}
-
-.image_container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
-    z-index: 1;
-}
-
-.image_container:hover::after {
-    opacity: 1; /* Show overlay on hover */
+    transform: scale(1.1);
 }
 
 .image-text {
-    margin-left: 20px; /* Adds space between image and text */
+    margin-left: 20px;
     font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for text */
-    color: white; /* Optional: text color */
-    padding: 10px; /* Optional: padding around text */
-    flex: 1; /* Make the text container take the remaining space */
-    align-self: flex-start; /* Align the text container to the top */
+    color: black;
+    padding: 10px;
+    flex: 1;
+    align-self: flex-start;
 }
+
+@media (max-width: 768px) {
+    .All_images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /* Footer */
 
@@ -97,7 +86,6 @@ body {
     background-color: #2c3e50;
     color: #ecf0f1;
     padding: 40px 0;
-    text-align: center;
 }
 
 .footer-container {
@@ -116,6 +104,7 @@ body {
 }
 
 .footer-section h2 {
+    margin-left: 90px;
     font-size: 18px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -131,22 +120,6 @@ body {
     margin-bottom: 10px;
 }
 
-.footer-section ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.footer-section ul li a img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 30px;
-    
-    text-align: center;
-}
-.footer-section ul li a img label {
-    
-    bottom: 60px;
-}
 .footer-section ul li a {
     color: #ecf0f1;
     text-decoration: none;
@@ -187,25 +160,7 @@ body {
     border: none;
     border-radius: 3px;
 }
-.social-item {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    margin-bottom: 10px;
-}
 
-.social-item img {
-    max-width: 30px;
-    margin-right: 10px;
-    float: right;
-   
-}
-
-.social-item label {
-    vertical-align: middle;
-    color: #ecf0f1;
-    float: right;
-}
 .newsletter button {
     padding: 10px 20px;
     background-color: #3498db;
@@ -225,6 +180,28 @@ body {
     background-color: #1a252f;
     color: #95a5a6;
     font-size: 14px;
+    text-align: center;
+}
+
+.contact-info li{
+    text-align: center;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: -25px;
+}
+
+.social-item img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.social-item label {
+    vertical-align: middle;
+    color: #ecf0f1;
 }
 
 @media (max-width: 768px) {
@@ -233,3 +210,4 @@ body {
         align-items: center;
     }
 }
+
