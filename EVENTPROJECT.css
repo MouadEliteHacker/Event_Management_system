@@ -1,39 +1,29 @@
 
-.white-block{
-
-    margin-top: 250px;
-    width: 100%;
-    height: 100px;
-    /*padding: 10px; /* Padding inside the div */
-    background-color: #fff; /* Background color for better shadow visibility */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
-    /*border-radius: 3px; /* Optional: rounded corners */
-    margin-bottom: -70px;
-}
-.white-block h1{
-
-    font-family: 'oswald';
-    font-size: 60px;
-    text-align: center;
+.white-block1 h1, .white-block h1 {
+    font-family: 'Oswald', sans-serif; /* Oswald font for a modern, clean look */
+    color: #333; /* Dark, readable text color */
+    text-align: center; /* Center align the text */
+    font-size: 60px; /* Large font size for headings */
+    font-weight: 700; /* Bold font weight for prominence */
+    margin: 0; /* Reset margin */
+    padding: 40px 0; /* Padding above and below the text */
+    background-color: #f8f8f8; /* Light background color to make the heading stand out */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Slightly rounded corners for a modern look */
+    display: block; /* Block display to fill the width */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.white-block1 {
-
-    margin-top: 50px;
-    width: 100%;
-    height: 100px;
-    /*padding: 10px; /* Padding inside the div */
-    background-color: #fff; /* Background color for better shadow visibility */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
-    /*border-radius: 3px; /* Optional: rounded corners */
+/* Add a decorative underline to the headings for an eventful touch */
+.white-block1 h1:after, .white-block h1:after {
+    content: '';
+    display: block;
+    margin: 20px auto; /* Center the line */
+    width: 15%; /* Line width */
+    padding-top: 3px; /* Line thickness */
+    border-bottom: 2px solid #333; /* Line color */
 }
-.white-block1 h1{
-
-    font-family: 'oswald';
-    font-size: 60px;
-    text-align: center;
-}
-
   /*The following code is to design the images in the mainpage*/
 .Images-box{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Slight shadow */
@@ -188,6 +178,7 @@
     width: 100%;
     height : 100%;
     margin-top: 5px;
+    display: block;
 }
 
 
@@ -204,7 +195,7 @@
     border-radius: 10px; /* Rounded corners */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
     
-     background-color: white; /* Light Steel Blue */
+     background-color: lightgrey; /* Light Steel Blue */
     
     
      
@@ -230,6 +221,8 @@
 .icon-text {
     text-align: center;
     font-size: 14px; /* Adjust the size of the text */
+    margin-top: 10px;
+   
 }
 
 .icon-row {
@@ -250,8 +243,14 @@
 
 .icon-text {
     text-align: center;
-    font-size: 14px; /* Adjust the size of the text */
-
+    font-size: 16px; /* Slightly larger font size for better readability */
+    margin-top: 10px;
+    color: #333; /* Darker text color for better contrast */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; /* Professional font family */
+    font-weight: 400; /* Normal font weight - adjust as needed */
+    line-height: 1.5; /* Optimal line height for readability */
+    max-width: 220px; /* Max width to maintain optimal line length */
+    margin: auto; /* Center the text block */
 }
 
 
