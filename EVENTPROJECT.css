@@ -1,37 +1,37 @@
 
 .white-block1 h1, .white-block h1 {
-    font-family: 'Oswald', sans-serif; /* Oswald font for a modern, clean look */
-    color: #333; /* Dark, readable text color */
-    text-align: center; /* Center align the text */
-    font-size: 60px; /* Large font size for headings */
-    font-weight: 700; /* Bold font weight for prominence */
-    margin: 0; /* Reset margin */
-    padding: 40px 0; /* Padding above and below the text */
-    background-color: #f8f8f8; /* Light background color to make the heading stand out */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 5px; /* Slightly rounded corners for a modern look */
-    display: block; /* Block display to fill the width */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-family: 'Oswald', sans-serif;
+    color: #333; 
+    text-align: center; 
+    font-size: 60px; 
+    font-weight: 700; 
+    margin: 0; 
+    padding: 40px 0; 
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+    display: block; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
-/* Add a decorative underline to the headings for an eventful touch */
+
 .white-block1 h1:after, .white-block h1:after {
     content: '';
     display: block;
-    margin: 20px auto; /* Center the line */
-    width: 15%; /* Line width */
-    padding-top: 3px; /* Line thickness */
+    margin: 20px auto; 
+    width: 15%; 
+    padding-top: 3px; 
     border-bottom: 2px solid #333; 
 }
   
 .Images-box{
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Slight shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); 
     width: 98%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    border-radius: 3px; /* rounded corners */
+    border-radius: 3px; 
 }
 
 .All_images {
@@ -43,8 +43,8 @@
 
 .image_container a {
     margin-bottom: 30px;
-    position: relative; /* Create positioning context */
-    display: block; /* Ensure the anchor tag is treated as a block element */
+    position: relative; 
+    display: block; 
     overflow: hidden; 
     margin-right: 30px;
     margin-left: 20px;
@@ -57,13 +57,13 @@
     width: 700px;
     height: 400px;
     transition: transform 0.3s ease;
-    display: block; /* Remove any default spacing */
+    display: block; 
     border-radius: 5px;
     
 }
 
 .image-wrapper:hover img {
-    transform: scale(1.1); /* Scale the image */
+    transform: scale(1.1); 
 }
 
 .image-wrapper::after {
@@ -73,29 +73,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
 .image-wrapper:hover::after {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1; 
 }
 
 .image-text {
     position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the text */
+    transform: translate(-50%, -50%); 
     color: white;
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
-    border-radius: 5px; /* Optional: make the text box look nicer */
+    border-radius: 5px; 
 }
 .See_more {
-    text-align: center; /* Center the button container */
-    margin-top: 50px; /* Space from the top */
+    text-align: center; 
+    margin-top: 50px; 
     margin-bottom: 30px;
 }
 .See_more a p{
@@ -106,28 +106,28 @@ font-size: 15px;
 .See_more a {
     display: inline-block; 
     padding: 15px 30px; 
-    font-size: 10px; /* Larger font size */
-    font-family: 'Oswald', sans-serif; /* Font family */
-    text-decoration: none; /* Removes underline from the link */
-    color: #fff; /* Text color */
-    background: linear-gradient(145deg, #3498db, #2980b9); /* Gradient background */
+    font-size: 10px; 
+    font-family: 'Oswald', sans-serif; 
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(145deg, #3498db, #2980b9); 
     border: none;
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    width: 100px; /* Increased width */
+    border-radius: 4px; 
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+    width: 100px; 
     margin-bottom: 30px;
 }
 
 .See_more a:hover {
-    background: linear-gradient(145deg, #2980b9, #3498db); /* Gradient background on hover */
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25); /* Shadow effect on hover */
+    background: linear-gradient(145deg, #2980b9, #3498db); 
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25); 
 }
 
 
 .See_more a:active {
-    background: linear-gradient(145deg, #3498db, #2980b9); /* Background color when clicked */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect when clicked */
+    background: linear-gradient(145deg, #3498db, #2980b9); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
     /* Navigation Code */
@@ -141,13 +141,13 @@ font-size: 15px;
     nav {
         background-color: rgb(14, 23, 84);
         height: 80px;
-        position: fixed; /* Fixed position */
-        top: 0; /* At the top of the page */
-        width: 100%; /* Full width */
-        z-index: 1000; /* Ensure it is above other elements */
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        z-index: 1000; 
         display: flex;
-        align-items: center; /* Align items vertically in the center */
-        justify-content: center; /* Center content horizontally */
+        align-items: center; 
+        justify-content: center; 
     }
     
     .container {
@@ -160,8 +160,8 @@ font-size: 15px;
     }
     
     .logo {
-        width: 200px; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
+        width: 200px; 
+        height: auto; 
     }
     
     .nav-links {
@@ -169,7 +169,7 @@ font-size: 15px;
         margin: 0;
         padding: 0;
         display: flex;
-        align-items: center; /* Align items vertically in the center */
+        align-items: center; 
     }
     
     .nav-links li {
@@ -264,9 +264,9 @@ font-size: 15px;
     color: #333; /* Darker text color for better contrast */
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; /* Professional font family */
     font-weight: 400; /* Normal font weight - adjust as needed */
-    line-height: 1.5; /* Optimal line height for readability */
-    max-width: 220px; /* Max width to maintain optimal line length */
-    margin: auto; /* Center the text block */
+    line-height: 1.5; 
+    max-width: 220px; 
+    margin: auto; 
 }
 
 
