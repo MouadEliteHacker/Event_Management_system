@@ -204,7 +204,7 @@
     border-radius: 10px; /* Rounded corners */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
     
-     background-color: white; /* Light Steel Blue */
+     background-color: lightgrey; /* Light Steel Blue */
     
     
      
@@ -230,6 +230,8 @@
 .icon-text {
     text-align: center;
     font-size: 14px; /* Adjust the size of the text */
+    margin-top: 10px;
+   
 }
 
 .icon-row {
@@ -250,8 +252,14 @@
 
 .icon-text {
     text-align: center;
-    font-size: 14px; /* Adjust the size of the text */
-
+    font-size: 16px; /* Slightly larger font size for better readability */
+    margin-top: 10px;
+    color: #333; /* Darker text color for better contrast */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; /* Professional font family */
+    font-weight: 400; /* Normal font weight - adjust as needed */
+    line-height: 1.5; /* Optimal line height for readability */
+    max-width: 220px; /* Max width to maintain optimal line length */
+    margin: auto; /* Center the text block */
 }
 
 
