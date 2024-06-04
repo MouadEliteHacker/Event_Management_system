@@ -22,9 +22,9 @@
     margin: 20px auto; /* Center the line */
     width: 15%; /* Line width */
     padding-top: 3px; /* Line thickness */
-    border-bottom: 2px solid #333; /* Line color */
+    border-bottom: 2px solid #333; 
 }
-  /*The following code is to design the images in the mainpage*/
+  
 .Images-box{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Slight shadow */
     width: 98%;
@@ -37,7 +37,7 @@
 .All_images {
     display:flex;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -54,8 +54,8 @@
 
 .image_container a img {
 
-    width: 570px;
-    height: auto;
+    width: 700px;
+    height: 400px;
     transition: transform 0.3s ease;
     display: block; /* Remove any default spacing */
     border-radius: 5px;
@@ -93,27 +93,43 @@
     padding: 10px 20px;
     border-radius: 5px; /* Optional: make the text box look nicer */
 }
-.See_more a p {
-    font-size: x-large;
-    font-family: 'oswlad';
-    text-align: center;
-    
-    color: #2c3e50;
-    margin-top: 50px;
+.See_more {
+    text-align: center; /* Center the button container */
+    margin-top: 50px; /* Space from the top */
+    margin-bottom: 30px;
 }
-.See_more:hover {
-    color:#3498db;
+.See_more a p{
+font-size: 15px;
+
+
+}
+.See_more a {
+    display: inline-block; 
+    padding: 15px 30px; 
+    font-size: 10px; /* Larger font size */
+    font-family: 'Oswald', sans-serif; /* Font family */
+    text-decoration: none; /* Removes underline from the link */
+    color: #fff; /* Text color */
+    background: linear-gradient(145deg, #3498db, #2980b9); /* Gradient background */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    width: 100px; /* Increased width */
+    margin-bottom: 30px;
 }
 
-/* Link color after it has been visited */
-.See_more:visited {
-    color: gray;
+.See_more a:hover {
+    background: linear-gradient(145deg, #2980b9, #3498db); /* Gradient background on hover */
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25); /* Shadow effect on hover */
 }
 
-/* Link color when it is active (clicked) */
-.See_more:active {
-    color:black;
+
+.See_more a:active {
+    background: linear-gradient(145deg, #3498db, #2980b9); /* Background color when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect when clicked */
 }
+
     /* Navigation Code */
 
     body {
