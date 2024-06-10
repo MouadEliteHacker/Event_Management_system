@@ -44,7 +44,7 @@
 .image_container a {
     margin-bottom: 30px;
     position: relative; 
-    display: block; 
+    display: block;  
     overflow: hidden; 
     margin-right: 30px;
     margin-left: 20px;
@@ -190,6 +190,7 @@ font-size: 15px;
     
     
 /*banner*/
+
 .banner img {
     width: 100%;
     height : 100%;
@@ -205,38 +206,37 @@ font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5px; /* Margin on the left and right of each icon */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
-    border-radius: 10px; /* Rounded corners */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 5px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
     
-     background-color: lightgrey; /* Light Steel Blue */
-    
+     background-color: lightgrey; 
     
      
     
 }
 
 .icon-container:hover {
-    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    transform: scale(1.05); 
 }
 
 .icon {
-    width: 150px; /* Adjust the size of the icons */
-    height: 160px; /* Adjust the size of the icons */
-    margin-bottom: 10px; /* Space between the icon and the text */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 150px; 
+    height: 160px; 
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease; 
    
 }
 
 .icon-container:hover .icon {
-    transform: scale(1.2); /* Zoom in the image on hover */
+    transform: scale(1.2); 
 }
 
 .icon-text {
     text-align: center;
-    font-size: 14px; /* Adjust the size of the text */
+    font-size: 14px; 
     margin-top: 10px;
    
 }
@@ -245,7 +245,7 @@ font-size: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%; /* Adjust this width as needed */
+    width: 100%; 
     height: 200px;
     
     background-color: whitesmoke; /* Background color */

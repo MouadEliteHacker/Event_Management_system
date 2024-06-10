@@ -19,7 +19,7 @@ body {
 
 .welcome-section {
     flex: 1;
-    background-color: #007bff; /* Placeholder color in case image does not load */
+    background-color: #007bff; 
     display: flex;
     justify-content: center;
     align-items: center;
